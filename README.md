@@ -4,12 +4,16 @@ This is hdf5widget, a widget for viewing the contents of a [HDF5](https://suppor
 
 ## Install
 
-### Installing from git
+### Installing with pip
 
 ```
-git clone https://github.com/m-rossi/hdf5widget.git
-cd hdf5widget
-pip install .
+pip install hdf5widget
+```
+
+### Installing with conda
+
+```
+conda install -c mrossi hdf5widget
 ```
 
 ## Usage
