@@ -6,7 +6,7 @@ setup(author='Marco Rossi',
                    'Programming Language :: Python :: 3.6'],
       description='This is hdf5widget, a widget for viewing the contents of a '
                   'HDF5-file in Jupyter Notebooks using ipywidgets.',
-      install_requires=['h5py', 'ipywidgets'],
+      install_requires=['h5py', 'ipywidgets>=7.0'],
       license='MIT',
       name='hdf5widget',
       packages=['hdf5widget'],

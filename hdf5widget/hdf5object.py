@@ -21,8 +21,7 @@ class HDF5Object:
 
         # create accordion object
         self.groups = widgets.Accordion(
-            children=[val for val in children.values()])
-        # TODO Use selected_index=None when ipywidgets=7.0 is released
+            children=[val for val in children.values()], selected_index=None)
         vbox.append(self.groups)
 
         # name each accordion sub-object
