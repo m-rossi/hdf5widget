@@ -1,0 +1,22 @@
+package:
+  name: hdf5widget
+  version: 0.1
+
+source:
+  path: ..
+
+build:
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - ipywidgets >=7.0
+    - h5py
+
+about:
+  home: https://github.com/m-rossi/hdf5widget
+  summary: This is hdf5widget, a widget for viewing the contents of a HDF5-file in Jupyter Notebooks using ipywidgets.
