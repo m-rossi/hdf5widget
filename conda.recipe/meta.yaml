@@ -13,6 +13,8 @@ requirements:
     - python
     - setuptools
     - setuptools_scm
+    - pandoc
+    - pypandoc
   run:
     - python
     - ipywidgets >=7.0
