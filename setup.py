@@ -25,5 +25,6 @@ setup(
     name='hdf5widget',
     packages=['hdf5widget'],
     python_requires='>=3.6',
-    version='0.1',
-    url='https://github.com/m-rossi/hdf5widget')
+    setup_requires=['setuptools_scm'],
+    url='https://github.com/m-rossi/hdf5widget',
+    use_scm_version=True)

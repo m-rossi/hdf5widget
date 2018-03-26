@@ -1,6 +1,6 @@
 package:
   name: hdf5widget
-  version: 0.1
+  version: {{ GIT_DESCRIBE_TAG }}
 
 source:
   path: ..
@@ -12,6 +12,7 @@ requirements:
   build:
     - python
     - setuptools
+    - setuptools_scm
   run:
     - python
     - ipywidgets >=7.0
