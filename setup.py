@@ -1,12 +1,11 @@
-import os
 from setuptools import setup
 
 
-# Get the long description from the README file
-with open(os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                       'README.rst'),
-          encoding='utf-8') as f:
-    long_description = f.read()
+try:
+    import pypandoc
+    long_description = pypandoc.convert('README.md', 'rst')
+except ImportError:
+    long_description = open('README.md').read()
 
 setup(
     author='Marco Rossi',
