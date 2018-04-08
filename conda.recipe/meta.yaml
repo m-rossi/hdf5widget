@@ -11,10 +11,8 @@ build:
 requirements:
   build:
     - python
-    - setuptools
+    - setuptools >= 38.6.0
     - setuptools_scm
-    - pandoc
-    - pypandoc
   run:
     - python
     - ipywidgets >=7.0
